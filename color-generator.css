@@ -25,6 +25,15 @@ body {
     --background: #1F2937;
     --font-color: #D5D4D8;
 }
+header,
+footer,
+button,
+#color-values-container {
+    background: #485563;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 header {
     background-color: var(--background);
     color: var(--font-color);
@@ -136,7 +145,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #49566b;
+    border: 1px solid var(--font-color);
 }
 /* -----------------------------------------------------------
     COLOR RECTANGLES
@@ -177,8 +186,6 @@ button:hover {
     height: 46px;
     position: relative;
     top: 98px;
-    background-color: var(--background);
-    background-color: #36404d;
 }
 .color-code:hover {
     color: #a5a4a7;
@@ -186,7 +193,7 @@ button:hover {
 footer {
     background-color: #36404d;
     padding: 0.3em;
-    margin-top: 2em;
+    margin-top: 3em;
     text-align: center;
     color: #7f858f;
     border-top: 1px solid #7f858f;
