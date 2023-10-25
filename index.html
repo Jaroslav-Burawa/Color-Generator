@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Random color generator">
+      <meta name="keywords" content="colors, generator, design">
+      <meta name="author" content="Jaroslav Burawa">
+      <!-- Normalize CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- CSS -->
+      <link rel=stylesheet href="color-generator.css">
+      <title>Color Generator</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div id="title">
+            <i class="fa-solid fa-palette" style="color: #6e7e95"></i>
+            <span class="palette" id="color-title">
+                <span id="letter-one">C</span>
+                <span id="letter-two">O</span>
+                <span id="letter-three">L</span>
+                <span id="letter-four">O</span>
+                <span id="letter-five">R</span>
+            </span>
+            <span class="generator">Generator</span>
+        </div>
+        <p id="subtitle"><i><b>Amazing colors themes !</b></i></p>
+    </header>
+
+    <div id="container">
+
+        <section id="color-picker-container">
+
+            <div id="color-picker">
+                <input type="color" id="color-input" value="#DE68EE"/>
+            </div>
+
+            <div id="color-scheme">
+                <select name="scheme" id="scheme">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+            </div>
+
+            <div id="button">
+                <button type="button" id="get-color-btn">Get Color Scheme</button>
+            </div>
+            
+        </section>
+
+        <section id="color-values-container">
+            <div class="color-code" id="color-one">#D95FEA</div>
+            <div class="color-code" id="color-two">#EB63D3</div>
+            <div class="color-code" id="color-three">#ED67AC</div>
+            <div class="color-code" id="color-four">#EE6A87</div>
+            <div class="color-code" id="color-five">#F0786E</div>
+        </section>
+
+        <section id="color-rectangle-container">
+            <div class="rectangle" id="rectangle-one"></div>
+            <div class="rectangle" id="rectangle-two"></div>
+            <div class="rectangle" id="rectangle-three"></div>
+            <div class="rectangle" id="rectangle-four"></div>
+            <div class="rectangle" id="rectangle-five"></div>
+        </section>
+
+    </div>
+
+    <script src="color-generator.js"></script>
+
+</body>
